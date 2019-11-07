@@ -1,0 +1,25 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Sign In </h2>
+      <h2 class="inactive underlineHover">Sign Up </h2>
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="assets/images/supergiros.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form ngNativeValidate [formGroup]="formLogin" (ngSubmit)="login()">
+        <input formControlName="correo" name="correo" type="text"  class="fadeIn second"  placeholder="login" required>
+        <input formControlName="password" name="password" type="password"  class="fadeIn third" placeholder="password" required>
+        <input type="submit" class="fadeIn fourth" value="Log In">
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">¿Has olivadado tu contraseña?</a>
+      </div>
+  
+    </div>
+  </div>
